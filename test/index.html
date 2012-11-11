@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- HTML5 shiv -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <title>markitup test</title>
+  <link rel="stylesheet" href="../css/markitup.css" />
+  <style type="text/css">
+    #image1_container {width:80%;}
+    #image1_container img {max-width:100%;}
+  </style>
+</head>
+
+<body>
+  <h1>container: 80% width</h1>
+  <div id="image1_container">
+    <img src="images/image1.png" id="image1" alt="annotatable image" />
+  </div>
+  
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.event.move.js"></script>
+  <script src="../js/jquery.markitup.js"></script>
+  <script type="text/javascript">
+    $(window).load(function(){
+      $("#image1").markitup();
+    });
+  </script>
+</body>
+</html>
